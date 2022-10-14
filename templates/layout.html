@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluris</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-navbar">
+            <h1 class="logo">
+            <a href="{{ url_for('index') }}">  
+            <img class="favicon" src="{{ url_for('static', filename='images/logo.png') }}" height="85" width="120"> 
+            </a>  
+            </h1>    
+            <nav>
+                <ul class="menu">
+                    <li><a href="{{ url_for('about') }}">about</a></li>
+                    <li><a href="{{ url_for('listings') }}">listings</a></li>
+                    <li><a href="{{ url_for('contact') }}">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html> 
+

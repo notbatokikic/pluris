@@ -1,18 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pluris</title>
-</head>
-<body>
-    {% extends "navbar.html" %}
-    {% block content %}
+{% extends "layout.html" %}
+
+{% block content %}
+
     <div class="index">
-        <h1>Pluris</h1>
+        <img class="plogo" src="{{ url_for('static', filename='images/logop.svg') }}"> 
         <p>coming soon . .</p>
     </div>
-    {% endblock %}
-</body>
-</html>
+
+<!--   <div class="section-listings">
+        <h1>Listings</h1>
+        <p>gud deal boyz</p>
+    </div>
+-->
+
+<!--   <div class="section-about">
+        <h1>about</h1>
+        <p>hugo the man</p>
+    </div>
+-->
+
+<!--   <div class="section-contact">
+        <h1>contact</h1>
+        <p>let's flirt</p>
+    </div>
+-->
+
+{% endblock %}
