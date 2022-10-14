@@ -17,7 +17,7 @@ header {
 }
 
 header h1.logo {
-    margin: 0;
+    margin: 0 auto;
     float: left;
 }
 
@@ -55,14 +55,13 @@ header h1.logo {
 .container {
     background-color: #002A39;
     opacity: 0.97;
-    height: 990px;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
 .index {
-    width: 1200px;
-    margin: 0 auto;
+    margin-top: 5rem;
     color: #FFEFCC;
     display: grid;
     place-items: center;
@@ -70,8 +69,9 @@ header h1.logo {
 }
 
 .index img {
-    margin-top: 100px;
-    margin-bottom: 80px;
+    height: 28rem;
+    width: auto;
+    margin-bottom: 5rem;
 }
 
 .index p {
@@ -90,7 +90,7 @@ header h1.logo {
   /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 24% }
+    to { width: 16% }
 }
 
   /* The typewriter cursor effect */
