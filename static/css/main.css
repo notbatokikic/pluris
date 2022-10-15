@@ -126,7 +126,7 @@ header {
     font-family: "Silkscreen", sans-serif;
     font-size: 2em;
 }
-    
+
     
       /* The typing effect */
 @keyframes typing {
@@ -170,7 +170,7 @@ header {
     }
 
     .navbar-links ul li a {
-        padding: 8rem;
+        margin: 7rem;
         font-size: 1.5rem;
     }
 
@@ -182,9 +182,16 @@ header {
         padding-left: 0rem;
     }
 
+    .p-logo {
+        height: 15rem;
+        width: 15rem;
+        margin-top: 5rem;
+    }
+
+
     @keyframes typing {
         from { width: 0 }
-        to { width: 59% }
+        to { width: 98% }
     }
         
           /* The typewriter cursor effect */
