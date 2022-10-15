@@ -1,80 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue';
-    color: #FFEFCC;
 }
 
-/*
-   * Formatting the header area
-   */
 header {
     background-color: #FFEFCC;
-    height: 80px;
     width: 100%;
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFEFCC;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    color: #002A39;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
-header h1.logo {
-    margin: 0 auto;
-    float: left;
+.navbar-links li {
+    list-style: none;
 }
 
-
-
-
-/*
-   * Centering the body content
-   */
-.container-navbar {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.menu {
-    float: right;
-    margin-top: 30px;
-}
-
-.menu li {
-    display: inline;
-}
-
-.menu li + li {
-    margin-left: 45px;
-}
-
-.menu li a {
-    font-family: 'Silkscreen', cursive;
-    color: #002A39;
+.navbar-links li a {
+    display: block;
     text-decoration: none;
+    color: #002A39;
+    margin: 1.5rem; 
+    text-decoration: none;
+    font-family: 'Silkscreen', cursive;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: 30px;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.toggle-button .bar {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #002A39;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+
+.toggle-button:hover span:nth-child(2) {
+    transform: translateX(10px);
+}
+
+.toggle-button.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.toggle-button.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.toggle-button.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
 }
 
 .container {
     background-color: #002A39;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-top: 6rem;
+    padding-bottom: 15rem;
     opacity: 0.97;
-    height: 100vh;
     width: 100%;
-    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.index {
-    margin-top: 5rem;
-    color: #FFEFCC;
-    display: grid;
-    place-items: center;
-
-}
-
-.index img {
-    height: 28rem;
-    width: auto;
-    margin-bottom: 5rem;
-}
-
-.index p {
+.text {
     font-size: 40px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(220, 211, 195); /* The typwriter cursor */
@@ -84,18 +119,77 @@ header h1.logo {
     animation: 
     typing 3s steps(30),
     blink-caret 1s step-end infinite;
+    margin-top: 5rem;
+    color: #FFEFCC;
+    display: grid;
+    place-items: center;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 2em;
 }
-
-
-  /* The typing effect */
+    
+    
+      /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 16% }
+    to { width: 30% }
 }
-
-  /* The typewriter cursor effect */
+    
+      /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #FFEFCC }
 }
 
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        background-color: #FFEFCC;
+        z-index: 1;
+    }
+
+    .navbar-links ul li a {
+        padding: 8rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .container {
+        padding-left: 0rem;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 59% }
+    }
+        
+          /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #FFEFCC }
+    }
+}
