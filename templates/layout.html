@@ -15,30 +15,32 @@
 </head>
 <body>
     <header>
-        <div class="container-navbar">
-            <h1 class="logo">
-            <a href="{{ url_for('index') }}">  
-            <img class="favicon" src="{{ url_for('static', filename='images/logo.png') }}" height="85" width="120"> 
-            </a>  
-            </h1>    
-            <nav>
-                <ul class="menu">
+        <nav class="navbar">
+        
+                <img class="brand-title" src="{{ url_for('static', filename='images/logo.png') }}" height="85" width="135"> 
+            
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+        
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#" class="is-active">listings</a></li>
                     <li><a href="#">about</a></li>
-                    <li><a href="#">listings</a></li>
                     <li><a href="#">contact</a></li>
-
-
-                    <!-- <li><a href="{{ url_for('about') }}">about</a></li>
-                    <li><a href="{{ url_for('listings') }}">listings</a></li>
-                    <li><a href="{{ url_for('contact') }}">contact</a></li> -->
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
+
     <div class="container">
         {% block content %}
         {% endblock %}
     </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html> 
 
