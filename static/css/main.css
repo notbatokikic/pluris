@@ -167,10 +167,11 @@ header {
         text-align: center;
         background-color: #FFEFCC;
         z-index: 1;
+        border: 1px solid #002A39;
     }
 
     .navbar-links ul li a {
-        margin: 7rem;
+        margin: 5rem;
         font-size: 1.5rem;
     }
 
