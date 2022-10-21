@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="XRP">
+        <p>{{ call.name }}</p>
+        <p>{{ call.price }}</p>
+    </div>
+
+    <div class="image">
+        {{ calling[0].url }}
+    </div>
+{% endblock %}
