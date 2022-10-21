@@ -1,37 +1,38 @@
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
-header {
-    background-color: #FFEFCC;
+
+.navbar-container {
+    position: absolute;  /* pos: fixed if i want nav bar to scroll with */
+    top: 0;
+    margin: 0;
     width: 100%;
-    height: 80px;
+    height: 200px;
 }
 
 .navbar {
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFEFCC;
-    max-width: 1280px;
     margin: 0 auto;
     
 }
 
-.brand-title {
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    color: #002A39;
+.navbar svg {
+    margin-top: 1.5em;
 }
 
 .navbar-links {
-    height: 100%;
+    margin-right: 3rem;
 }
 
 .navbar-links ul {
@@ -42,15 +43,17 @@ header {
 
 .navbar-links li {
     list-style: none;
+    margin: 1rem;
 }
 
 .navbar-links li a {
-    display: block;
     text-decoration: none;
     color: #002A39;
+    opacity: 0.8;
     margin: 1.5rem; 
     text-decoration: none;
-    font-family: 'Silkscreen', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
 }
 
 
@@ -63,6 +66,17 @@ header {
     justify-content: space-between;
     width: 30px;
     height: 25px;
+}
+
+.content-slider {
+    margin: 0;
+    height: 100vh;
+    background-color: #E9E9EB;
+}
+
+.content-slider p{
+    margin: 0;
+    padding: 0;
 }
 
 .toggle-button .bar {
@@ -96,18 +110,18 @@ header {
 }
 
 .container {
-    background-color: #002A39;
-    margin: 0 auto;
-    padding-left: 1.5rem;
-    padding-top: 1.8rem;
-    padding-bottom: .6rem;
-    opacity: 0.98;
-    width: 100%;
+    box-sizing: border-box;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: right;
+    text-align: center;
 }
+
 
 .text {
     font-size: 40px;
@@ -120,10 +134,9 @@ header {
     typing 3s steps(30),
     blink-caret 1s step-end infinite;
     margin-top: 5rem;
-    color: #FFEFCC;
-    display: grid;
-    place-items: center;
-    font-family: "Silkscreen", sans-serif;
+    color: #002A39;
+    opacity: 0.8;
+    font-family: 'Poppins', sans-serif;
     font-size: 2em;
 }
 
@@ -143,51 +156,91 @@ header {
 
 
 
-@media (max-width: 43rem) {
+@media (max-width: 63rem) {
+
+    .container {
+        background-image: url("../images/bg-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+        text-align: center;
+    }
+
+
+    .toggle-button {
+        display: flex;
+        margin-top: 1em;
+        margin-right: 1em;
+
+    }
+
+    .toggle-button .bar {
+        margin: 0 auto;
+        display: block;
+        width: 40px;
+        height: 4px;
+        position: relative;
+        background-color: #D4C5B6;
+        border-radius: 6px;
+        z-index: 1;
+        transform-origin: 0 0;
+        transition: 0.4s;
+    }
+    
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .toggle-button {
-        display: flex;
-    }
-
     .navbar-links {
         display: none;
-        width: 100%;
     }
 
     .navbar-links ul {
-        width: 100%;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .navbar-links ul li {
         text-align: center;
-        background-color: #FFEFCC;
         z-index: 1;
-        border: 1px solid #002A39;
+        border-bottom: 1px solid #D4C5B6;
+        padding-left: 4em;
+        padding-right: 4em;
+        margin: 2em;
     }
 
     .navbar-links ul li a {
-        margin: 5rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        letter-spacing: 0.01em;
+        color: #D4C5B6;
+
     }
 
     .navbar-links.active {
         display: flex;
+        background-color:#162431;
+        opacity: 0.90;
+        height: 100vh;
+        width: 100vw;
     }
 
-    .container {
-        padding-left: 0rem;
+    .navbar svg {
+        margin: 2em;
+        width: 4.2em;
+        height: 4.2em;
     }
 
-    .p-logo {
-        height: 15rem;
-        width: 15rem;
-        margin-top: 5rem;
+    .navbar svg path{
+        fill: #D4C5B6;
     }
+
+
+
 
 
     @keyframes typing {
