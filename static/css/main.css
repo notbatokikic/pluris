@@ -16,7 +16,7 @@ body {
     top: 0;
     margin: 0;
     width: 100%;
-    height: 200px;
+    height: 12vh;
 }
 
 .navbar {
@@ -48,12 +48,16 @@ body {
 
 .navbar-links li a {
     text-decoration: none;
-    color: #002A39;
+    color: #142530;
     opacity: 0.8;
     margin: 1.5rem; 
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5em;
+}
+
+.navbar-links-mobile {
+    display: none;
 }
 
 
@@ -68,16 +72,6 @@ body {
     height: 25px;
 }
 
-.content-slider {
-    margin: 0;
-    height: 100vh;
-    background-color: #E9E9EB;
-}
-
-.content-slider p{
-    margin: 0;
-    padding: 0;
-}
 
 .toggle-button .bar {
     display: block;
@@ -117,42 +111,71 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    border-bottom-right-radius: 3000px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    
+}
+
+
+
+
+.arrow-container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 12rem;
+}
+
+.line-container {
+    width: 4px;
+    height: 44px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.line {
+    position: absolute;
+    width: 4px;
+    height: 0px;
+    background-color: #333a4d;
+    top: 0;
+    bottom: initial;
+    animation: line-animation 2.5s ease-in-out 0s infinite normal; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: right;
-    text-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 3px;
 }
 
-
-.text {
-    font-size: 40px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(220, 211, 195); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-    typing 3s steps(30),
-    blink-caret 1s step-end infinite;
-    margin-top: 5rem;
-    color: #002A39;
-    opacity: 0.8;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+.line::before {
+    content: ' ';
+    width: 18px;
+    height: 18px;
+    border-right: 4px solid #333a4d;
+    border-bottom: 4px solid #333a4d;
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    animation: arrow-animation 2.5s ease-in-out 0s infinite normal; 
 }
 
-    
-      /* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 30% }
-}
-    
-      /* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #FFEFCC }
+@keyframes line-animation {
+    0% {height: 0px; top: 0px; opacity: 0;}
+    50% {height: 55px; top: 0px; opacity: 1;}
+    100% {height: 0px; top: 55px; opacity: 0;}
 }
 
+@keyframes arrow-animation {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
 
 
 
@@ -163,11 +186,12 @@ body {
         background-size: cover;
         background-position: center;
         height: 100vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: right;
-        text-align: center;
+        border-bottom-right-radius: 0px;
+        overflow: hidden;
     }
 
 
@@ -192,6 +216,7 @@ body {
     }
     
     .navbar {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -200,33 +225,47 @@ body {
         display: none;
     }
 
-    .navbar-links ul {
+
+    .navbar-links-mobile ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    
     }
 
-    .navbar-links ul li {
+    .navbar-links-mobile ul li {
         text-align: center;
         z-index: 1;
         border-bottom: 1px solid #D4C5B6;
         padding-left: 4em;
         padding-right: 4em;
         margin: 2em;
+        list-style: none;
     }
 
-    .navbar-links ul li a {
+    .navbar-links-mobile ul li a {
         font-size: 2rem;
-        letter-spacing: 0.01em;
         color: #D4C5B6;
-
+        text-decoration: none;
     }
 
     .navbar-links.active {
+        display: none;
+    }
+
+    .navbar-links-mobile.active {
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
         background-color:#162431;
         opacity: 0.90;
-        height: 100vh;
         width: 100vw;
+        height: 85vh;
     }
 
     .navbar svg {
@@ -239,18 +278,44 @@ body {
         fill: #D4C5B6;
     }
 
-
-
-
-
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 98% }
+    .arrow-container {
+        display: none;
     }
-        
-          /* The typewriter cursor effect */
-    @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: #FFEFCC }
+
+    .arrow-container.active {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line {
+        position: absolute;
+        width: 4px;
+        height: 0px;
+        background-color: #D4C5B6;
+        top: 0;
+        bottom: initial;
+        animation: line-animation 2.5s ease-in-out 0s infinite normal; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 3px;
+    }
+
+    .line::before {
+        content: ' ';
+        width: 18px;
+        height: 18px;
+        border-right: 4px solid #D4C5B6;
+        border-bottom: 4px solid #D4C5B6;
+        transform: rotate(45deg);
+        display: block;
+        position: absolute;
+        bottom: 0;
+        animation: arrow-animation 2.5s ease-in-out 0s infinite normal; 
     }
 }

@@ -1,0 +1,263 @@
+
+.listings-container {
+    margin: 0;
+    padding: 0;
+    height: 110vh;
+    width: 100vw;
+    background-color: #152431;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border-top-left-radius: 120px;
+}
+
+.mobile-listings-container {
+    border-top: 1px solid #fff;
+    opacity: 0.8;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+
+.title-listings-mobile {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.subtitle-listings-mobile {
+    margin: 0;
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+.scene {
+    width: 300px;
+    height: 600px;
+    perspective: 600px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+}
+
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    background: white;
+    border-radius: 16px;
+}
+
+
+
+.mobile-title {
+    margin-top: 15px;
+    padding: 0;
+    margin-left: 10px;
+    margin-bottom: 0;
+    color: #999;
+    font-size: 12px;
+}
+
+h2 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.sell {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 3px dotted #ddd;
+}
+
+.down {
+    padding: 14px 15px;
+    background-color: #152431;
+    border-radius: 50%;
+    position: absolute
+}
+
+.up {
+    padding: 14px 15px;
+    background-color: #152431;
+    border-radius: 50%;
+    position: absolute;
+
+    top: 485px;
+    right: -15px;
+}
+
+.down {
+    bottom: 85px;
+    right: 285px;
+}
+
+
+.penis {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-container {
+    width: 100%;
+    height: auto;
+}
+
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 33%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    opacity: 0.8;
+}
+
+.nav label {
+    width: 40%;
+    height: 60%;
+    display: none;
+    position: absolute;
+	opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 80px;
+    text-align: center;
+    line-height: 200px;
+    font-family: "Varela Round", sans-serif;
+    background-color: none;
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.nav label.prev {
+    padding-right: 130px;
+}
+
+.nav label.next {
+    padding-left: 90px;
+}
+
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+    top: 310px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -140px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6, 
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8,
+input#img-9:checked ~ .nav-dots label#img-dot-9 {
+	background: rgba(2, 3, 6, 0.8);
+}
+
+
+@media (min-width: 63rem) {
+    .listings-container {
+        display: none;
+    }
+
+
+}  

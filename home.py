@@ -20,6 +20,12 @@ def listings():
 def contact():
     return render_template('contact.html')
 
+@app.route('/thanks/')
+def thanks():
+    return render_template('thanks.html')
+
+
+
 
 """
 @app.route('/bato/')

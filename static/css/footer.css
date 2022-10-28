@@ -1,0 +1,238 @@
+
+.background-footer {
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    width: 100vw;
+    background-color: #d0d3d5;
+    overflow: hidden;
+}
+
+.footer-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0e1c25;
+
+}
+
+.outline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    height: 80%;
+}
+
+.center-container {
+    width: 200px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #d0d3d5;
+}
+
+.right-container {
+    width: 200px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    border-top: 1px solid #d0d3d5;
+
+}
+
+.pluris-footer-logo {
+    margin-top: -10px;
+}
+
+.left-container {
+    width: 200px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #d0d3d5 ;
+    align-items: center;
+}
+
+.hugo {
+    width: 9rem;
+    height: 9rem;
+    opacity: 0.9;
+    margin-top: 2em;
+}
+
+.hugo-text {
+    color: #d0d3d5;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+.hugo-subtext {
+    margin: 0;
+    font-size: .6em;
+    color: #d0d3d5;
+}
+
+.hugo-text-side {
+    color: #d0d3d5;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+.hugo-subtext-side {
+    margin: 0;
+    font-size: .6em;
+    color: #d0d3d5;
+    margin-top: 5px;
+}
+
+.footer-logos {
+    margin-top: 30px;
+}
+
+.hugo-subtext-side-containter {
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 0.4em;
+    color: #d0d3d5;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 63rem) {
+
+.background-footer {
+    margin: 0;
+    padding: 0;
+    height: 65vh;
+    width: 100vw;
+    background-color: #d0d3d5;
+    overflow: hidden;
+}
+
+.footer-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0e1c25;
+}
+
+.outline {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.center-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #d0d3d5;
+    margin-top: 1.5em;
+}
+
+.right-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #d0d3d5;
+    margin-top: 1.5em;
+}
+
+.left-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0px;
+}
+
+.pluris-footer-logo {
+    margin: 0;
+    margin-bottom: -2.8rem;
+}
+
+.hugo {
+    width: 5rem;
+    height: 5rem;
+    opacity: 0.9;
+    margin-top: 1em;
+}
+
+.hugo-text {
+    color: #d0d3d5;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+.hugo-subtext {
+    margin: 0;
+    font-size: .6em;
+    color: #d0d3d5;
+}
+
+.hugo-text-side {
+    color: #d0d3d5;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+
+.hugo-subtext-side {
+    margin: 3px;
+    font-size: .6em;
+    color: #d0d3d5;
+}
+
+.footer-logos {
+    margin-top: 10px;
+}
+
+.hugo-subtext-side-containter {
+    margin-top: 30px;
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 0.4em;
+    color: #d0d3d5;
+}
+
+}
+

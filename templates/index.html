@@ -3,8 +3,505 @@
 {% block content %}
 
 
-<div class="content-slider">
+<!--__________________________________________SECTION ABOUT________________________________-->
+
+<section class="pluris-section">
+    <div class="pluris-container" id="pluris">
+
+        <div class="pluris-logo-container">
+            <img class="pluris-logo-about" src="{{ url_for('static', filename='images/logo.png') }}" alt="pluris-logo">
+        </div>
+
+        <div class="home-logo-container">
+            <img class="home-logo-about" src="{{ url_for('static', filename='images/home-2.svg') }}" alt="pluris-logo">
+        </div>
+
+        <div class="header-title">
+            <p class="main-text">ticket to your home?</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ___________________________________________LISTINGS SECTION DESKTOP TICKETS_____________________________________________-->
+
+
+
+
+<section class="section-tickets">
+
+<div class="tickets-container" id="listings">
+
+    <div class="title-listings">
+        <h1 class="listings-title">listings</h1>
+        <h4 class="subtitle-listings">// tickets</h4>
+    </div>
+    
+
+    <div class="item">
+        <div class="item-right">
+            <h4 class="desktop-title">apartment</h4>
+            <h2 class="num">Howald</h2>
+            <p class="ref">1ZNX7 | 21/10/2022</p>
+
+            <div class="icons">
+                <p class="day">
+                    <iconify-icon icon="ph:bed-thin" width="32" height="32"></iconify-icon>  2
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:arrows-out-simple-thin" width="32" height="32"></iconify-icon>  104<span class="meter">&#13217;</span>
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:bathtub-thin" width="32" height="32"></iconify-icon>  1
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:chart-bar-thin" width="32" height="32"></iconify-icon>  3
+                </p>
+
+
+                <p class="day">
+                    <iconify-icon icon="ph:car-thin" width="32" height="32"></iconify-icon>  2
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:calendar-thin" width="32" height="32"></iconify-icon>  2021
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:train-thin" width="32" height="32"></iconify-icon> 5"
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:battery-charging-thin" width="32" height="32"></iconify-icon>  A
+                </p>
+            </div>
+    
+            <div class="buy">
+                <span class="up-border"></span>
+                <span class="down-border"></span>
+                <p>1 360 000€</p>
+                <a href="#contact" class="buy-button">buy
+                </a>   
+            </div>
+        </div> <!-- end item-right --> 
+
+
+
+        <div class="item-left">
+
+            <div class="barcode">
+                <iconify-icon icon="el:barcode" width="65" height="400" rotate="90deg"></iconify-icon>
+            </div>
+
+            <div class="penis1">
+                <ul class="slides1">
+                    <input type="radio" name="radio-btn" id="img1" checked />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="{{ url_for('static', filename='images/1.jpeg') }}" />
+                        </div>
+                        <div class="nav1">
+                            <label for="img9" class="prev1">&#x2039;</label>
+                            <label for="img2" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img2" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="{{ url_for('static', filename='images/2.jpeg') }}" />
+                        </div>
+                        <div class="nav1">
+                            <label for="img1" class="prev1">&#x2039;</label>
+                            <label for="img3" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img3" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="{{ url_for('static', filename='images/3.jpeg') }}" />
+                        </div>
+                        <div class="nav1">
+                            <label for="img2" class="prev1">&#x2039;</label>
+                            <label for="img4" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img4" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="{{ url_for('static', filename='images/4.jpeg') }}" />
+                        </div>
+                        <div class="nav1">
+                            <label for="img3" class="prev1">&#x2039;</label>
+                            <label for="img5" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img5" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="{{ url_for('static', filename='images/5.jpeg') }}" />
+                        </div>
+                        <div class="nav1">
+                            <label for="img4" class="prev1">&#x2039;</label>
+                            <label for="img6" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img6" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="{{ url_for('static', filename='images/6.jpeg') }}" />
+                        </div>
+                        <div class="nav1">
+                            <label for="img5" class="prev1">&#x2039;</label>
+                            <label for="img7" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img7" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="{{ url_for('static', filename='images/7.jpeg') }}" />
+                        </div>
+                        <div class="nav1">
+                            <label for="img6" class="prev1">&#x2039;</label>
+                            <label for="img8" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img8" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="{{ url_for('static', filename='images/8.jpeg') }}" />
+                        </div>
+                        <div class="nav1">
+                            <label for="img7" class="prev1">&#x2039;</label>
+                            <label for="img9" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img9" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="{{ url_for('static', filename='images/9.jpeg') }}" />
+                        </div>
+                        <div class="nav1">
+                            <label for="img8" class="prev1">&#x2039;</label>
+                            <label for="img1" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <li class="nav-dots1">
+                        <label for="img1" class="nav-dot1" id="imgdot1"></label>
+                        <label for="img2" class="nav-dot1" id="imgdot2"></label>
+                        <label for="img3" class="nav-dot1" id="imgdot3"></label>
+                        <label for="img4" class="nav-dot1" id="imgdot4"></label>
+                        <label for="img5" class="nav-dot1" id="imgdot5"></label>
+                        <label for="img6" class="nav-dot1" id="imgdot6"></label>
+                        <label for="img7" class="nav-dot1" id="imgdot7"></label>
+                        <label for="img8" class="nav-dot1" id="imgdot8"></label>
+                        <label for="img9" class="nav-dot1" id="imgdot9"></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div> <!-- end item-left -->
+    </div> <!-- end item -->
+</div>   
+</section>
+
+
+
+
+
+
+<!--__________________________________________LISTINGS SECTION MOBILE____________________________________-->
+
+
+<section>
+<div class="listings-container">
+    <div class="mobile-listings-container" id="listing">
+        <h1 class="title-listings-mobile">listings</h1>
+        <h4 class="subtitle-listings-mobile">// tickets</h4>
+    </div>
+    <div class="scene">
+        <div class="card">
+            <div class="card__face card__face--front">
+                <div class="penis">
+                    <ul class="slides">
+                        <input type="radio" name="radio-button" id="img-1" checked />
+                            
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="{{ url_for('static', filename='images/1.jpeg') }}" /> 
+                            </div>
+                        
+                            <div class="nav">
+                                <label for="img-6" class="prev">&#x2039;</label>
+                                <label for="img-2" class="next">&#x203a;</label>
+                            </div>
+                        </li>
+                
+                        <input type="radio" name="radio-button" id="img-2" />
+                    
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="{{ url_for('static', filename='images/2.jpeg') }}" />
+                            </div>
+                            
+                            <div class="nav">
+                                <label for="img-1" class="prev">&#x2039;</label>
+                                <label for="img-3" class="next">&#x203a;</label>
+                            </div>
+                        </li>
+                
+                        
+                        <input type="radio" name="radio-button" id="img-3" />
+                        
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="{{ url_for('static', filename='images/3.jpeg') }}" />
+                            </div>
+                            
+                            <div class="nav">
+                                <label for="img-2" class="prev">&#x2039;</label>
+                                <label for="img-4" class="next">&#x203a;</label>
+                            </div>
+                        </li>
+                
+                        <input type="radio" name="radio-button" id="img-4" />
+                    
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="{{ url_for('static', filename='images/4.jpeg') }}" />
+                            </div>
+                        
+                            <div class="nav">
+                                <label for="img-3" class="prev">&#x2039;</label>
+                                <label for="img-5" class="next">&#x203a;</label>
+                            </div>
+                        </li>
+                
+                        <input type="radio" name="radio-button" id="img-5" />
+                    
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="{{ url_for('static', filename='images/5.jpeg') }}" />
+                            </div>
+                        
+                            <div class="nav">
+                                <label for="img-4" class="prev">&#x2039;</label>
+                                <label for="img-6" class="next">&#x203a;</label>
+                            </div>
+                        </li>
+                
+                        <input type="radio" name="radio-button" id="img-6" />
+                    
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="{{ url_for('static', filename='images/6.jpeg') }}" />
+                            </div>
+                        
+                            <div class="nav">
+                                <label for="img-5" class="prev">&#x2039;</label>
+                                <label for="img-7" class="next">&#x203a;</label>
+                            </div>
+                        </li>
+
+                        <input type="radio" name="radio-button" id="img-7" />
+                    
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="{{ url_for('static', filename='images/7.jpeg') }}" />
+                            </div>
+                        
+                            <div class="nav">
+                                <label for="img-6" class="prev">&#x2039;</label>
+                                <label for="img-8" class="next">&#x203a;</label>
+                            </div>
+                        </li>
+
+                        <input type="radio" name="radio-button" id="img-8" />
+                    
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="{{ url_for('static', filename='images/8.jpeg') }}" />
+                            </div>
+                        
+                            <div class="nav">
+                                <label for="img-7" class="prev">&#x2039;</label>
+                                <label for="img-9" class="next">&#x203a;</label>
+                            </div>
+                        </li>
+
+                        <input type="radio" name="radio-button" id="img-9" />
+                    
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="{{ url_for('static', filename='images/9.jpeg') }}" />
+                            </div>
+                        
+                            <div class="nav">
+                                <label for="img-8" class="prev">&#x2039;</label>
+                                <label for="img-1" class="next">&#x203a;</label>
+                            </div>
+                        </li>
+                
+                        <li class="nav-dots">
+                            <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                            <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                            <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                            <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                            <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+                            <label for="img-7" class="nav-dot" id="img-dot-7"></label>
+                            <label for="img-8" class="nav-dot" id="img-dot-8"></label>
+                            <label for="img-9" class="nav-dot" id="img-dot-9"></label>
+                        </li>
+                    </ul>
+
+                    <div class="logos">
+                        <h4 class="mobile-title">apartment</h4>
+            <h2 class="num">Howald</h2>
+            <p class="ref">1ZNX7  |  21/10/2022</p>
+
+            <div class="icons">
+                <p class="day">
+                    <iconify-icon icon="ph:bed-thin" width="32" height="32"></iconify-icon>  2
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:arrows-out-simple-thin" width="32" height="32"></iconify-icon>  104<span class="meter">&#13217;</span>
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:bathtub-thin" width="32" height="32"></iconify-icon>  1
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:chart-bar-thin" width="32" height="32"></iconify-icon>  3
+                </p>
+
+
+                <p class="day">
+                    <iconify-icon icon="ph:car-thin" width="32" height="32"></iconify-icon>  2
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:calendar-thin" width="32" height="32"></iconify-icon>  2021
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:train-thin" width="32" height="32"></iconify-icon> 5"
+                </p>
+
+                <p class="day">
+                    <iconify-icon icon="ph:battery-charging-thin" width="32" height="32"></iconify-icon>  A
+                </p>
+            </div>
+    
+            <div class="sell">
+                <span class="down"></span>
+                <span class="up"></span>
+                <p>1 360 000€</p>
+                <a href="#contact" class="buy-button">buy
+                </a>    
+            </div>
+        </div> <!-- end item-right --> 
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</section>
+
+
+<!--_____________________________________SECTION ABOUT__________________________________-->
+<section class="about-section">
+    <div class="background-about">
+        <div class="about-container" id="contact">
+            <div class="contact-title-container">
+                <h1 class="title-contact">questions?</h1>
+                <h4 class="subtitle-contact">// contact</h4>
+            </div>
+            <div class="form-container">
+                <form action="https://formsubmit.co/hugo.alves@pluris.lu" method="POST">
+                    <div class="email-name">
+                        <input class="input-text" type="text" placeholder="name" name="name" required>
+                        <input class="input-text" type="email" placeholder="email address" name="email" required>
+                    </div>    
+                    <div class="message-box-container">
+                    <textarea class="message-box" type="text" placeholder="Leave your message.." name="message" required> </textarea>
+                    <input type="hidden" name="_next" value="http://www.pluris.lu/thanks">
+                    <input type="hidden" name="_captcha" value="false">
+                    </div>
+                    <div class="button">
+                    <button class="submit" type="submit">submit</button>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div>
+</section>
+
+
+
+<!--_____________________________________SECTION Contact__________________________________-->
+
+
+<section>
+    <div class="background-footer">
+        <div class="footer-container">
+
+            <div class="outline">  
+            <div class="left-container"> 
+                <img  class="pluris-footer-logo" src="{{ url_for('static', filename='images/pluris-footer-logo.svg') }}" />
+                <div class="hugo-subtext-side-containter">
+                    <p class="hugo-subtext-side">A : 51, rue Basse<br>L-7307 Steinsel </p>
+                    <p class="hugo-subtext-side">P : +352 691 160 293</p>
+                    <p class="hugo-subtext-side">TVA: LU34220286<br>RC: B268685</p>
+                </div>
+            </div>
+
+            <div class="center-container">
+                <img class="hugo" src="{{ url_for('static', filename='images/hugolino.png') }}" alt="owner"> 
+                <p class="hugo-text">Hugo Alves</p>
+                <p class="hugo-subtext">Owner</p>
+            </div>
+
+            <div class="right-container">
+                <div class="footer-social-title">
+                    <p class="hugo-text-side">follow us</p>
+                </div>
+                <div class="footer-logos">
+                    <a href="https://www.instagram.com/pluris_immo/" target="_blank">
+                        <iconify-icon icon="ph:instagram-logo-thin" style="color: #d0d3d5;" width="48" height="48"></iconify-icon>
+                    </a>
+
+                    <a href="https://www.facebook.com/people/Pluris-Immo/100082601076929/" target="_blank">
+                        <iconify-icon icon="ph:facebook-logo-thin" style="color: #d0d3d5;" width="48" height="48"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="copyright-container">
+                <p class="copyright">© Pluris. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!--    <div class="index">
         <img class="plogo" src="{{ url_for('static', filename='images/logop.svg') }}"> 
         <p >coming soon . .</p>
