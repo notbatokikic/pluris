@@ -1,0 +1,240 @@
+.about-container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.8;
+    border-top-right-radius: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-about {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #142530;
+}
+
+
+.contact-title-container {
+    width: 1200px;
+    border-top: 1px solid #152431;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    margin-top: 5em;
+    overflow: hidden;
+}
+
+.title-contact {
+    padding-top: 0.5em;
+    margin: 0;
+    margin-right: 1em;
+    font-size: 3em;
+    color: #152431;
+    opacity: 0.8;
+}
+
+.subtitle-contact {
+    margin: 0;
+    margin-right: 2em;
+    color: #152431;
+    opacity: 0.8;
+}
+
+
+.form-container form input{
+    display: block;
+    margin: 1em;
+    border: 1px solid #152431;   
+    text-align: center;
+}
+
+
+.email-name {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.message-box-container {
+    width: 100%;
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.message-box {
+    height: 20rem;
+    width: 30rem;
+    display: flex;
+    padding-top: 10em;
+}
+
+.input-text {
+    margin: 0 ;
+    padding: 10px 28px 10px 28px;
+}
+
+textarea::placeholder {
+    color: #152431;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    margin-top: 1.5rem;
+    padding: 10px 30px 10px 30px;
+    border-radius: 18px;
+    border: none;
+    background-color: #152431;
+    color: #fff;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 3px solid #152431;
+    opacity: 0.8;
+}
+
+input[type=email]:focus {
+    outline: none;
+    border: 3px solid #152431;
+    opacity: 0.8;
+}
+
+@media (max-width: 63rem) {
+
+    .about-section {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .about-container {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #fff;
+        opacity: 0.8;
+        border-top-right-radius: 120px;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-title-container {
+        width: 250px;
+        border-top: 1px solid #152431;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+        margin-top: 4em;
+        overflow: hidden;
+    }
+
+    .title-contact {
+        margin: 0;
+        font-size: 2em;
+        color: #152431;
+        opacity: 0.8;
+    }
+    
+    .subtitle-contact {
+        margin: 0;
+        color: #152431;
+        opacity: 0.8;
+    }
+
+    .form-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .form-container form input{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #152431;   
+        text-align: center;
+    }
+    
+    .email-name {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    .message-box-container {
+        width: 100%;
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .message-box {
+        height: 10rem;
+        width: 20rem;
+        padding-top: 4em;
+    }
+    
+    .input-text {
+        margin: 0 ;
+        padding: 10px 28px 10px 28px;
+    }
+    
+    ::placeholder {
+        color: #152431;
+        opacity: 0.8;
+    }
+
+    .button {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .submit {
+        padding: 10px 30px 10px 30px;
+        border-radius: 18px;
+        border: none;
+        background-color: #152431;
+        color: #fff;
+        margin: 0;
+    }
+    
+}

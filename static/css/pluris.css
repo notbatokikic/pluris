@@ -1,0 +1,80 @@
+.pluris-section {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.pluris-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.pluris-logo-about {
+    height: auto;
+    width: 400px;
+    opacity: 0.89; 
+    border-top: 1px solid #142530;
+    padding: 0;
+}
+
+
+.header-title {
+    display: flex;
+    justify-content: center;
+}
+
+.main-text {
+    font-size: 2em;
+    color:  #142530;
+    opacity: 0.8;
+    margin-top: 3em;
+}
+
+@media (max-width: 63rem) {
+
+    .pluris-section {
+        height: 90vh;
+        width: 100vw;
+        background-color: #fff;
+    }
+
+    .pluris-container {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .pluris-logo-about {
+        height: auto;
+        width: 200px;
+        opacity: 0.89; 
+        border-top: 1px solid #142530;
+        padding-bottom: 2rem;
+        margin-top: 5em;
+    }
+
+    .home-logo-about {
+        width: 420px;
+        height: auto;
+    }
+
+    .main-text {
+        font-size: 2em;
+        color:  #142530;
+        opacity: 0.8;
+        margin-top: 2em;
+    }
+}
+
+
