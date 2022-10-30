@@ -254,7 +254,7 @@ input#img-9:checked ~ .nav-dots label#img-dot-9 {
 }
 
 
-@media (min-width: 63rem) {
+@media (min-width: 43.75em) {
     .listings-container {
         display: none;
     }

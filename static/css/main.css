@@ -179,7 +179,7 @@ body {
 
 
 
-@media (max-width: 63rem) {
+@media (max-width: 43.75em) {
 
     .container {
         background-image: url("../images/bg-mobile.jpg");

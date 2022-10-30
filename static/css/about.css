@@ -121,7 +121,7 @@ input[type=email]:focus {
     opacity: 0.8;
 }
 
-@media (max-width: 63rem) {
+@media (max-width: 43.75em) {
 
     .about-section {
         margin: 0;
