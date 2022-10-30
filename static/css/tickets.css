@@ -290,7 +290,7 @@ input#img9:checked ~ .nav-dots1 label#imgdot9 {
 
 
 
-@media (max-width: 63rem) {
+@media (max-width: 43.75em) {
     .tickets-container {
         display: none;
     }
