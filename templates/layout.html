@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pluris</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tickets.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/listings.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}"> 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/pluris.css') }}"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}"> 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/footer.css') }}"> 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/thanks.css') }}"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,42 +20,42 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar-container">
-            <nav class="navbar">
+    <header id="home">
+        <nav class="navbar">
+            <a href="#home">
                 <svg width="155" height="100" viewBox="0 0 213 212" xmlns="http://www.w3.org/2000/svg">
                     <path d="M144.539 0.345459L67.065 0.29834L67.014 76.3963L107.648 76.4293L107.68 36.0196H139.547C159.72 36.0196 171.988 47.6393 171.965 66.3787C171.965 84.5244 159.669 96.4174 139.496 96.4033L107.629 96.3656L66.9955 96.3279L0.177353 96.4268L0.168091 131.291L66.9863 131.342L66.9353 211.172L107.282 211.196L107.328 131.781L144.456 131.804C185.386 131.828 212.589 104.475 212.613 66.1054C212.613 28.0329 185.465 0.354883 144.535 0.326612" fill="#002B3C" fill-opacity="0.92"/>
                 </svg>
-        
-                <a href="#" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
+            </a>
     
-                <div class="navbar-links">
-                    <ul>
-                        <li><a href="#pluris" class="is-active">about</a></li>
-                        <li><a href="#listings">listings</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="navbar-links-mobile">
-                    <ul>
-                        <li><a href="#pluris" class="is-active">about</a></li>
-                        <li><a href="#listing">listings</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+    
+            <div class="navbar-links-mobile">
+                <ul>
+                    <li><a href="#about" class="is-active">about</a></li>
+                    <li><a href="#listing">listings</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#about" class="is-active">about</a></li>
+                    <li><a href="#listings">listings</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="arrow-container active">
             <div class="line-container">
                 <div class="line"></div>
             </div>
         </div>
-    </div>
+    </header>
 
     {% block content %}
     {% endblock %}
