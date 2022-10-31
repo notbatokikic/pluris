@@ -44,6 +44,9 @@
 
 .pluris-footer-logo {
     margin: 0;
+    height: auto;
+    width: 10rem;
+    margin-bottom: -2.2rem;
 }
 
 .hugo {
@@ -144,6 +147,8 @@
         align-items: center;
         border-top: 1px solid #d0d3d5 ;
     }
+
+
     
     .hugo {
         width: 9rem;
